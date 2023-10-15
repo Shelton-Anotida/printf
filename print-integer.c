@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * printf-int - Print integer
- * @args: print argument
+ * print_integer - Print integer
+ * @args: argument to print
  * Return: number of characters always printed
  */
 int print_integer(va_list args)
@@ -9,7 +9,7 @@ int print_integer(va_list args)
 		int x = va_args(args, int);
 		int num, last = x % 10, digit, exp = 1;
 		int y = 1;
-		
+
 		x = x / 10;
 		num = x;
 
@@ -26,7 +26,7 @@ int print_integer(va_list args)
 			while (num / 10 != 0)
 			{
 				exp = exp * 10;
-				num = num /10;
+				num = num / 10;
 			}
 			num = x;
 			while (exp > 0)
