@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_decimal - Print decimal
- * @args: argument to print
+ * super_print_decimal - Print decimal
+ * @ar_gs: argument to print
  * Return: number of characters always printed
  */
-int print_decimal(va_list args)
+int super_print_decimal(va_list ar_gs)
 {
-	int x = va_arg(args, int);
+	int x = va_arg(ar_gs, int);
 	int num, last = x % 10, digit, exp = 1;
 	int y = 1;
 

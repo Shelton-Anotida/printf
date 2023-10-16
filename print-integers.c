@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print__integer - Print integer
- * @args: argument to print
+ * super_print_integer - Print integer
+ * @ar_gs: argument to print
  * Return: number of characters always printed
  */
-int print__integer(va_list ar_gs)
+int super_print_integer(va_list ar_gs)
 	{
 		int x = va_arg(ar_gs, int);
 		int num, last = x % 10, digit, exp = 1;
