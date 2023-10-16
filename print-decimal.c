@@ -6,7 +6,7 @@
  */
 int print_decimal(va_list args)
 {
-	int x = va_args(args, int);
+	int x = va_arg(args, int);
 	int num, last = x % 10, digit, exp = 1;
 	int y = 1;
 
@@ -19,7 +19,7 @@ int print_decimal(va_list args)
 		num = -num;
 		x = -x;
 		last = -last;
-		i++;
+		x++;
 	}
 	if (num > 0)
 	{
@@ -35,7 +35,7 @@ int print_decimal(va_list args)
 			_putchar(digit + '0');
 			num = num - (digit * exp);
 			exp = exp / 10;
-			i++;
+			x++;
 		}
 	}
 	_putchar(last + '0');
