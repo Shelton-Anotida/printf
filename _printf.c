@@ -66,3 +66,14 @@ int _print_stringy(char *stringy)
 	}
 	return (calculate_chars);
 }
+
+/**
+ * main - Entry of the Program
+ *
+ * Return: 0
+ */
+int main()
+{
+    _printf("Your Format String Here\n");
+    return 0;
+}
