@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 					calculate_chars += _putchar(va_arg(ar_gs, int));
 					break;
 				case 's':
-					calculate_chars += _print_string(va_arg(ar_gs, char *));
+					calculate_chars += _print_stringy(va_arg(ar_gs, char *));
 					break;
 				case '%':
 					calculate_chars += _putchar('%');
@@ -50,19 +50,30 @@ int _printf(const char *format, ...)
 }
 
 /**
- * _print_string - Custom function to print a string
- * @str: String to be printed
+ * _print_stringy - Custom function to print a string
+ * @stringy: String to be printed
  *
  * Return: Number of characters printed
  */
-int _print_string(char *str)
+int _print_stringy(char *stringy)
 {
 	int calculate_chars = 0;
 
-	while (*str != '\0')
+	while (*stringy != '\0')
 	{
-		calculate_chars += _putchar(*str);
-		str++;
+		calculate_chars += _putchar(*stringy);
+		stringy++;
 	}
 	return (calculate_chars);
+}
+
+/**
+ * main - Entry of the Program
+ *
+ * Return: 0
+ */
+int main()
+{
+    _printf("Your Format String Here\n");
+    return 0;
 }
