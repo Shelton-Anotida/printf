@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
 * print_hexa - Prints a hexadecimal number in lower or upper
 * @types: List of arguments
@@ -17,7 +19,7 @@ int flags, char flag_ch, int width, int precision, int size)
 int i = BUFF_SIZE - 2;
 unsigned long int num = va_arg(types, unsigned long int);
 unsigned long int init_num = num;
-UNUSED(width);
+(void) width;
 num = convert_size_unsgnd(num, size);
 if (num == 0)
 buffer[i--] = '0';

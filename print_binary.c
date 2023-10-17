@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * print_binary - Prints an unsigned number
 * @types: List of arguments
@@ -14,17 +15,17 @@ int flags, int width, int precision, int size)
 unsigned int b, c, i, sum;
 unsigned int a[32];
 int count;
-UNUSED(buffer);
-UNUSED(flags);
-UNUSED(width);
-UNUSED(precision);
-UNUSED(size);
+(void) buffer;
+(void) flags;
+(void) width;
+(void) precision;
+(void) size;
 b = va_arg(types, unsigned int);
 c = 2147483648; /* (2 ^ 31) */
 a[0] = b / c;
 for (i = 1; i < 32; i++)
 {
-m /= 2;
+sum /= 2;
 a[i] = (b / c) % 2;
 }
 for (i = 0, sum = 0, count = 0; i < 32; i++)
