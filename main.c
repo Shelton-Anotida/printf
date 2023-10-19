@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-#include "main.h"
-/**
-* main - Entry point
-* Return: Always 0
-*/
-int main(void)
-{
-_printf("%b\n", 98);
-return (0);
-=======
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
@@ -49,8 +38,5 @@ int main(void)
     len2 = printf("Percent:[%%]\n");
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
-    _printf("Unknown:[%r]\n");
-    printf("Unknown:[%r]\n");
     return (0);
->>>>>>> 42be1b11181102d90e956a88517964e6eb53d97f
 }
