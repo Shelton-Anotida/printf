@@ -1,6 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdarg.h>
+<<<<<<< HEAD
+=======
+#include <string.h>
+#include <unistd.h>
+>>>>>>> 42be1b11181102d90e956a88517964e6eb53d97f
 #include <stdio.h>
 #include <unistd.h>
 #define UNUSED(x) (void)(x)
