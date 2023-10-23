@@ -9,6 +9,7 @@
 int my_percent_printer(va_list secret_args)
 {
 	(void) secret_args;
+
 	printf_putchar('%');
 	return (1);
 }

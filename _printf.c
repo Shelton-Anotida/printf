@@ -11,8 +11,8 @@ int _printf(const char *format, ...)
 {
 	Converter converters[] = {
 		{'c', my_char_printer},
-		{'s', my_percent_printer},
-		{'%', my_string_printer},
+		{'s', my_string_printer},
+		{'%', my_percent_printer},
 		{'d', dec_print},
 		{'i', dec_print},
 		{'\0', NULL}
