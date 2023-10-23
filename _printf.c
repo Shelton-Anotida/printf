@@ -10,10 +10,12 @@
 int _printf(const char *format, ...)
 {
 	Converter converters[] = {
-		{'c', character_print},
-		{'s', super_string},
-		{'%', sp_percent_p},
-		{0, NULL}
+		{'c', my_char_printer},
+		{'s', my_percent_printer},
+		{'%', my_string_printer},
+		{'d', dec_print},
+		{'i', dec_print},
+		{'\0', NULL}
 	};
 
 	va_list secret_args;

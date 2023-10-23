@@ -19,8 +19,9 @@ typedef struct Converter
 
 int _printf(const char *format, ...);
 int printf_putchar(char c);
-int character_print(va_list secret_args);
-int super_string(va_list secret_args);
-int sp_percent_p(va_list secret_args);
+int my_char_printer(va_list secret_args);
+int my_percent_printer(va_list secret_args);
+int my_string_printer(va_list secret_args);
+int dec_print(va_list secret_args);
 
 #endif
